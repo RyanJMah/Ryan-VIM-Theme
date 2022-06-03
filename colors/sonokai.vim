@@ -262,6 +262,7 @@ if s:configuration.enable_italic
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
+  call sonokai#highlight('GreyItalic', s:palette.grey2, s:palette.none, 'italic')
 else
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none)
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none)
@@ -376,14 +377,14 @@ highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
 highlight! link TSComment Comment
 highlight! link TSConditional Red
-highlight! link TSConstBuiltin OrangeItalic
+highlight! link TSConstBuiltin Blue
 highlight! link TSConstMacro OrangeItalic
 highlight! link TSConstant OrangeItalic
 highlight! link TSConstructor Green
 highlight! link TSException Red
 highlight! link TSField Green
 highlight! link TSFloat Purple
-highlight! link TSFuncBuiltin Green
+highlight! link TSFuncBuiltin BlueItalic
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSInclude Red
@@ -396,7 +397,7 @@ highlight! link TSNamespace BlueItalic
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
 highlight! link TSOperator Red
-highlight! link TSParameter Fg
+highlight! link TSParameter OrangeItalic
 highlight! link TSParameterReference Fg
 highlight! link TSProperty Fg
 highlight! link TSPunctBracket Grey
@@ -404,8 +405,8 @@ highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Yellow
 highlight! link TSRepeat Red
 highlight! link TSString Yellow
-highlight! link TSStringEscape Green
-highlight! link TSStringRegex Green
+highlight! link TSStringEscape Purple
+highlight! link TSStringRegex Purple
 highlight! link TSStructure OrangeItalic
 highlight! link TSSymbol Fg
 highlight! link TSTag BlueItalic
@@ -417,7 +418,7 @@ highlight! link TSType BlueItalic
 highlight! link TSTypeBuiltin BlueItalic
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
-highlight! link TSVariableBuiltin OrangeItalic
+highlight! link TSVariableBuiltin GreyItalic
 " }}}
 " neoclide/coc.nvim {{{
 call sonokai#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')

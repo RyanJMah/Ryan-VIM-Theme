@@ -77,6 +77,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'purple':     ['#ab9df2',   '176'],
           \ 'grey':       ['#848089',   '246'],
           \ 'grey_dim':   ['#605d68',   '240'],
+          \ 'grey2':      ['#c1c0c0',   '240'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'andromeda'
