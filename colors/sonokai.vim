@@ -389,7 +389,7 @@ highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSInclude Red
 highlight! link TSKeyword Red
-highlight! link TSKeywordFunction Red
+highlight! link TSKeywordFunction RedItalic
 highlight! link TSKeywordOperator Red
 highlight! link TSLabel Red
 highlight! link TSMethod Green
