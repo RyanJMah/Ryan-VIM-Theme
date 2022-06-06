@@ -382,7 +382,7 @@ highlight! link TSConstMacro OrangeItalic
 highlight! link TSConstant OrangeItalic
 highlight! link TSConstructor Green
 highlight! link TSException Red
-highlight! link TSField Green
+highlight! link TSField Fg
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin BlueItalic
 highlight! link TSFuncMacro Green
