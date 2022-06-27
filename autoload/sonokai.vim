@@ -42,7 +42,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'bg_blue':    ['#85d3f2',   '110'],
           \ 'diff_blue':  ['#354157',   '17'],
           \ 'diff_yellow':['#4e432f',   '54'],
-          \ 'fg':         ['#e2e2e3',   '250'],
+          \ 'fg':         ['#e8e8e8',   '250'],
           \ 'red':        ['#fc5d7c',   '203'],
           \ 'orange':     ['#f39660',   '215'],
           \ 'yellow':     ['#e7c664',   '179'],
@@ -51,6 +51,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'purple':     ['#b39df3',   '176'],
           \ 'grey':       ['#7f8490',   '246'],
           \ 'grey_dim':   ['#595f6f',   '240'],
+          \ 'grey2':      ['#cccccc',   '240'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'shusia'
