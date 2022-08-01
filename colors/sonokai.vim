@@ -51,6 +51,7 @@ else
   call sonokai#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   call sonokai#highlight('FoldColumn', s:palette.grey_dim, s:palette.none)
 endif
+call sonokai#highlight('GreyHighlight', s:palette.none, s:palette.bg2)
 call sonokai#highlight('SignColumn', s:palette.fg, s:palette.none)
 call sonokai#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call sonokai#highlight('Search', s:palette.bg0, s:palette.bg_green)
@@ -829,6 +830,7 @@ highlight! link IndentBlanklineChar Conceal
 highlight! link IndentBlanklineSpaceChar Conceal
 highlight! link IndentBlanklineSpaceCharBlankline Conceal
 highlight! link IndentBlanklineContextChar Grey
+highlight! link IndentBlanklineContextStart GreyHighlight
 " }}}
 " p00f/nvim-ts-rainbow {{{
 highlight! link rainbowcol1 Red
