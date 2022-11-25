@@ -248,6 +248,7 @@ call sonokai#highlight('Ignore', s:palette.grey, s:palette.none)
 call sonokai#highlight('Underlined', s:palette.none, s:palette.none, 'underline')
 " }}}
 " Predefined Highlight Groups: {{{
+call sonokai#highlight('DarkBg', s:palette.darker_bg, s:palette.none)
 call sonokai#highlight('Fg', s:palette.fg, s:palette.none)
 call sonokai#highlight('Grey', s:palette.grey, s:palette.none)
 call sonokai#highlight('Red', s:palette.red, s:palette.none)
@@ -381,6 +382,7 @@ highlight! link TSConditional Red
 highlight! link TSConstBuiltin Blue
 highlight! link TSConstMacro Red
 highlight! link TSConstant OrangeItalic
+" highlight! link TSConstant Fg
 highlight! link TSConstructor Green
 highlight! link TSException Red
 highlight! link TSField Fg
