@@ -257,6 +257,7 @@ call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
 call sonokai#highlight('Green', s:palette.green, s:palette.none)
 call sonokai#highlight('Blue', s:palette.blue, s:palette.none)
 call sonokai#highlight('Purple', s:palette.purple, s:palette.none)
+call sonokai#highlight('Purple2', s:palette.purple2, s:palette.none)
 if s:configuration.enable_italic
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none, 'italic')
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none, 'italic')
@@ -264,6 +265,7 @@ if s:configuration.enable_italic
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
+  call sonokai#highlight('Purple2Italic', s:palette.purple2, s:palette.none, 'italic')
   call sonokai#highlight('GreyItalic', s:palette.grey2, s:palette.none, 'italic')
 else
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none)
@@ -272,6 +274,7 @@ else
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none)
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none)
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none)
+  call sonokai#highlight('Purple2Italic', s:palette.purple2, s:palette.none)
 endif
 call sonokai#highlight('RedSign', s:palette.red, s:palette.none)
 call sonokai#highlight('OrangeSign', s:palette.orange, s:palette.none)
@@ -377,39 +380,54 @@ highlight! link TSAnnotation BlueItalic
 highlight! link TSAttribute BlueItalic
 highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
+highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
 highlight! link TSConditional Red
 highlight! link TSConstBuiltin Blue
 highlight! link TSConstMacro Red
 highlight! link TSConstant OrangeItalic
-" highlight! link TSConstant Fg
+" highlight! link TSConstant Purple2
 highlight! link TSConstructor Green
+highlight! link TSDebug Debug
+highlight! link TSDefine Define
+highlight! link TSEnvironment Macro
+highlight! link TSEnvironmentName Type
+highlight! link TSError Error
 highlight! link TSException Red
 highlight! link TSField Fg
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin BlueItalic
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
+highlight! link TSFunctionCall Green
 highlight! link TSInclude Red
 highlight! link TSKeyword Red
-highlight! link TSKeywordFunction RedItalic
+highlight! link TSKeywordFunction BlueItalic
 highlight! link TSKeywordOperator Red
+highlight! link TSKeywordReturn Red
 highlight! link TSLabel Red
+highlight! link TSLiteral String
+highlight! link TSMath Yellow
 highlight! link TSMethod Green
+highlight! link TSMethodCall Green
 highlight! link TSNamespace BlueItalic
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
 highlight! link TSOperator Red
 highlight! link TSParameter OrangeItalic
 highlight! link TSParameterReference Fg
+highlight! link TSPreProc PreProc
 highlight! link TSProperty Fg
 highlight! link TSPunctBracket Grey
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Yellow
 highlight! link TSRepeat Red
+highlight! link TSStorageClass Red
+highlight! link TSStorageClassLifetime Red
 highlight! link TSString Yellow
 highlight! link TSStringEscape Purple
 highlight! link TSStringRegex Purple
+highlight! link TSStringSpecial Yellow
 highlight! link TSStructure OrangeItalic
 highlight! link TSSymbol Fg
 highlight! link TSTag BlueItalic
@@ -422,6 +440,91 @@ highlight! link TSTypeBuiltin BlueItalic
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin GreyItalic
+
+if has('nvim-0.8.0')
+  highlight! link @annotation TSAnnotation
+  highlight! link @attribute TSAttribute
+  highlight! link @boolean TSBoolean
+  highlight! link @character TSCharacter
+  highlight! link @character.special TSCharacterSpecial
+  highlight! link @comment TSComment
+  highlight! link @conceal Grey
+  highlight! link @conditional TSConditional
+  highlight! link @constant TSConstant
+  highlight! link @constant.builtin TSConstBuiltin
+  highlight! link @constant.macro TSConstMacro
+  highlight! link @constructor TSConstructor
+  highlight! link @debug TSDebug
+  highlight! link @define TSDefine
+  highlight! link @error TSError
+  highlight! link @exception TSException
+  highlight! link @field TSField
+  highlight! link @float TSFloat
+  highlight! link @function TSFunction
+  highlight! link @function.builtin TSFuncBuiltin
+  highlight! link @function.call TSFunctionCall
+  highlight! link @function.macro TSFuncMacro
+  highlight! link @include TSInclude
+  highlight! link @keyword TSKeyword
+  highlight! link @keyword.function TSKeywordFunction
+  highlight! link @keyword.operator TSKeywordOperator
+  highlight! link @keyword.return TSKeywordReturn
+  highlight! link @label TSLabel
+  highlight! link @math TSMath
+  highlight! link @method TSMethod
+  highlight! link @method.call TSMethodCall
+  highlight! link @namespace TSNamespace
+  highlight! link @none TSNone
+  highlight! link @number TSNumber
+  highlight! link @operator TSOperator
+  highlight! link @parameter TSParameter
+  highlight! link @parameter.reference TSParameterReference
+  highlight! link @preproc TSPreProc
+  highlight! link @property TSProperty
+  highlight! link @punctuation.bracket TSPunctBracket
+  highlight! link @punctuation.delimiter TSPunctDelimiter
+  highlight! link @punctuation.special TSPunctSpecial
+  highlight! link @repeat TSRepeat
+  highlight! link @storageclass TSStorageClass
+  highlight! link @storageclass.lifetime TSStorageClassLifetime
+  highlight! link @strike TSStrike
+  highlight! link @string TSString
+  highlight! link @string.escape TSStringEscape
+  highlight! link @string.regex TSStringRegex
+  highlight! link @string.special TSStringSpecial
+  highlight! link @symbol TSSymbol
+  highlight! link @tag TSTag
+  highlight! link @tag.attribute TSTagAttribute
+  highlight! link @tag.delimiter TSTagDelimiter
+  highlight! link @text TSText
+  highlight! link @text.danger TSDanger
+  highlight! link @text.diff.add diffAdded
+  highlight! link @text.diff.delete diffRemoved
+  highlight! link @text.emphasis TSEmphasis
+  highlight! link @text.environment TSEnvironment
+  highlight! link @text.environment.name TSEnvironmentName
+  highlight! link @text.literal TSLiteral
+  highlight! link @text.math TSMath
+  highlight! link @text.note TSNote
+  highlight! link @text.reference TSTextReference
+  highlight! link @text.strike TSStrike
+  highlight! link @text.strong TSStrong
+  highlight! link @text.title TSTitle
+  highlight! link @text.todo TSTodo
+  highlight! link @text.underline TSUnderline
+  highlight! link @text.uri TSURI
+  highlight! link @text.warning TSWarning
+  highlight! link @todo TSTodo
+  highlight! link @type TSType
+  highlight! link @type.builtin TSTypeBuiltin
+  highlight! link @type.definition TSTypeDefinition
+  highlight! link @type.qualifier TSTypeQualifier
+  highlight! link @uri TSURI
+  highlight! link @variable TSVariable
+  highlight! link @variable.builtin TSVariableBuiltin
+endif
+
+
 " }}}
 " neoclide/coc.nvim {{{
 call sonokai#highlight('CocHoverRange', s:palette.none, s:palette.none, 'bold,underline')

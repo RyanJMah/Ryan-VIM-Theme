@@ -50,12 +50,17 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'green':      ['#a9dc76',   '107'],
           \ 'blue':       ['#78dce8',   '110'],
           \ 'purple':     ['#c885d7',   '176'],
+          \ 'purple2':    ['#AB9DF2',   '176'],
           \ 'grey':       ['#7f8490',   '246'],
           \ 'grey_dim':   ['#595f6f',   '240'],
           \ 'grey2':      ['#cccaca',   '240'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'shusia'
+          " \ 'yellow':     ['#ebc686',   '179'],
+          " \ 'orange':     ['#dc9d70',   '215'],
+          " \ 'green':      ['#a3d472',   '107'],
+          " \ 'fg':         ['#e8e8e8',   '250'],
     let palette = {
           \ 'black':      ['#181819',   '237'],
           \ 'darker_bg':  ['#221f22',   '237'],
@@ -73,11 +78,12 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'diff_yellow':['#4e432f',   '54'],
           \ 'fg':         ['#e8e8e8',   '250'],
           \ 'red':        ['#ff6188',   '203'],
-          \ 'orange':     ['#dc9d70',   '215'],
-          \ 'yellow':     ['#ebc686',   '179'],
-          \ 'green':      ['#a3d472',   '107'],
+          \ 'orange':     ['#fc9867',   '215'],
+          \ 'yellow':     ['#ffd866',   '179'],
+          \ 'green':      ['#a9dc76',   '107'],
           \ 'blue':       ['#78dce8',   '110'],
           \ 'purple':     ['#c885d7',   '176'],
+          \ 'purple2':    ['#AB9DF2',   '176'],
           \ 'grey':       ['#7f8490',   '246'],
           \ 'grey_dim':   ['#595f6f',   '240'],
           \ 'grey2':      ['#cccaca',   '240'],
