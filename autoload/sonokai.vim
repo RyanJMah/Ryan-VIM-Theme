@@ -58,7 +58,6 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ }
   elseif a:style ==# 'shusia'
           " \ 'yellow':     ['#ebc686',   '179'],
-          " \ 'orange':     ['#dc9d70',   '215'],
           " \ 'green':      ['#a3d472',   '107'],
           " \ 'fg':         ['#e8e8e8',   '250'],
     let palette = {
@@ -78,7 +77,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'diff_yellow':['#4e432f',   '54'],
           \ 'fg':         ['#e8e8e8',   '250'],
           \ 'red':        ['#ff6188',   '203'],
-          \ 'orange':     ['#fc9867',   '215'],
+          \ 'orange':     ['#dc9d70',   '215'],
           \ 'yellow':     ['#ffd866',   '179'],
           \ 'green':      ['#a9dc76',   '107'],
           \ 'blue':       ['#78dce8',   '110'],
