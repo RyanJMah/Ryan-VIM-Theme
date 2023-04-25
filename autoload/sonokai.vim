@@ -56,7 +56,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'grey2':      ['#cccaca',   '240'],
           \ 'none':       ['NONE',      'NONE']
           \ }
-  elseif a:style ==# 'shusia'
+  elseif a:style ==# 'dark'
           " \ 'yellow':     ['#ebc686',   '179'],
           " \ 'green':      ['#a3d472',   '107'],
           " \ 'fg':         ['#e8e8e8',   '250'],
@@ -114,6 +114,37 @@ function! sonokai#get_palette(style, colors_override) "{{{
     "       \ 'grey2':      ['#cccaca',   '240'],
     "       \ 'none':       ['NONE',      'NONE']
     "       \ }
+  elseif a:style ==# 'darker'
+   let palette = {
+          \ 'black':      ['#181819',   '237'],
+          \ 'darker_bg':  ['#221f22',   '237'],
+          \ 'bg0':        ['#222222',   '235'],
+          \ 'bg1':        ['#2d2d2d',   '236'],
+          \ 'bg2':        ['#383838',   '236'],
+          \ 'bg3':        ['#434343',   '237'],
+          \ 'bg4':        ['#535353',   '237'],
+          \ 'bg_red':     ['#f25d67',   '203'],
+          \ 'diff_red':   ['#55393d',   '52'],
+          \ 'bg_green':   ['#a9dc76',   '107'],
+          \ 'diff_green': ['#394634',   '22'],
+          \ 'bg_blue':    ['#78dce8',   '110'],
+          \ 'diff_blue':  ['#354157',   '17'],
+          \ 'diff_yellow':['#4e432f',   '54'],
+          \ 'fg':         ['#f7f1ff',   '250'],
+          \ 'red':        ['#fc618d',   '203'],
+          \ 'orange':     ['#fd995d',   '215'],
+          \ 'yellow':     ['#fce566',   '179'],
+          \ 'green':      ['#7bd88f',   '107'],
+          \ 'blue':       ['#5ad4e6',   '110'],
+          \ 'purple':     ['#948ae3',   '176'],
+          \ 'purple2':    ['#AB9DF2',   '176'],
+          \ 'grey':       ['#737177',   '246'],
+          \ 'grey_dim':   ['#525053',   '240'],
+          \ 'grey2':      ['#BAB6C0',   '240'],
+          \ 'none':       ['NONE',      'NONE']
+          \ }
+
+
   elseif a:style ==# 'andromeda'
     let palette = {
           \ 'black':      ['#181a1c',   '237'],
