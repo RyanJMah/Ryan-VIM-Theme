@@ -117,7 +117,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
   elseif a:style ==# 'darker'
    let palette = {
           \ 'black':      ['#181819',   '237'],
-          \ 'darker_bg':  ['#221f22',   '237'],
+          \ 'darker_bg':  ['#191919',   '237'],
           \ 'bg0':        ['#222222',   '235'],
           \ 'bg1':        ['#2d2d2d',   '236'],
           \ 'bg2':        ['#383838',   '236'],
@@ -125,9 +125,9 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'bg4':        ['#535353',   '237'],
           \ 'bg_red':     ['#f25d67',   '203'],
           \ 'diff_red':   ['#55393d',   '52'],
-          \ 'bg_green':   ['#a9dc76',   '107'],
+          \ 'bg_green':   ['#7bd88f',   '107'],
           \ 'diff_green': ['#394634',   '22'],
-          \ 'bg_blue':    ['#78dce8',   '110'],
+          \ 'bg_blue':    ['#5ad4e6',   '110'],
           \ 'diff_blue':  ['#354157',   '17'],
           \ 'diff_yellow':['#4e432f',   '54'],
           \ 'fg':         ['#f7f1ff',   '250'],
