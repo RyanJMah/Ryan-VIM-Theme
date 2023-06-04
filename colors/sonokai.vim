@@ -385,7 +385,9 @@ highlight! link TSComment Comment
 highlight! link TSConditional Red
 highlight! link TSConstBuiltin Blue
 highlight! link TSConstMacro Red
-highlight! link TSConstant OrangeItalic
+" highlight! link TSConstant Blue
+" highlight! link TSConstant OrangeItalic
+highlight! link TSConstant Orange
 " highlight! link TSConstant PurpleItalic
 highlight! link TSConstructor Green
 highlight! link TSDebug Debug
