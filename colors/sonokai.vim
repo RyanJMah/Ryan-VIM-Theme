@@ -200,13 +200,13 @@ endif
 if s:configuration.enable_italic
   call sonokai#highlight('Type', s:palette.blue, s:palette.none, 'italic')
   call sonokai#highlight('Structure', s:palette.blue, s:palette.none, 'italic')
-  call sonokai#highlight('StorageClass', s:palette.blue, s:palette.none, 'italic')
+  call sonokai#highlight('StorageClass', s:palette.red, s:palette.none, 'italic')
   call sonokai#highlight('Identifier', s:palette.orange, s:palette.none, 'italic')
   call sonokai#highlight('Constant', s:palette.orange, s:palette.none, 'italic')
 else
   call sonokai#highlight('Type', s:palette.blue, s:palette.none)
   call sonokai#highlight('Structure', s:palette.blue, s:palette.none)
-  call sonokai#highlight('StorageClass', s:palette.blue, s:palette.none)
+  call sonokai#highlight('StorageClass', s:palette.red, s:palette.none)
   call sonokai#highlight('Identifier', s:palette.orange, s:palette.none)
   call sonokai#highlight('Constant', s:palette.orange, s:palette.none)
 endif
@@ -407,7 +407,7 @@ highlight! link TSKeyword Red
 highlight! link TSKeywordFunction BlueItalic
 highlight! link TSKeywordOperator Red
 highlight! link TSKeywordReturn Red
-highlight! link TSLabel Red
+highlight! link TSLabel Purple
 highlight! link TSLiteral String
 highlight! link TSMath Yellow
 highlight! link TSMethod Green
@@ -442,6 +442,15 @@ highlight! link TSTypeBuiltin BlueItalic
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin GreyItalic
+highlight! link TSTypeQualifier RedItalic
+
+" highlight! link TSRainbowRed Red
+" highlight! link TSRainbowYellow Yellow
+" highlight! link TSRainbowBlue Blue
+" highlight! link TSRainbowOrange Orange
+" highlight! link TSRainbowGreen Green
+" highlight! link TSRainbowViolet Purple
+" highlight! link TSRainbowCyan Blue
 
 if has('nvim-0.8.0')
   highlight! link @annotation TSAnnotation
