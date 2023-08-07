@@ -378,7 +378,7 @@ call sonokai#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call sonokai#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
 highlight! link TSAnnotation BlueItalic
 highlight! link TSAttribute BlueItalic
-highlight! link TSBoolean PurpleItalic
+highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
 highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
