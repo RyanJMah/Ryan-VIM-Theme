@@ -114,6 +114,7 @@ function! sonokai#get_palette(style, colors_override) "{{{
     "       \ 'grey2':      ['#cccaca',   '240'],
     "       \ 'none':       ['NONE',      'NONE']
     "       \ }
+    "      \ 'red':        ['#ff668c',   '203'],
   elseif a:style ==# 'darker'
    let palette = {
           \ 'black':      ['#181819',   '237'],
@@ -130,15 +131,15 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'bg_blue':    ['#5ad4e6',   '110'],
           \ 'diff_blue':  ['#354157',   '17'],
           \ 'diff_yellow':['#4e432f',   '54'],
-          \ 'fg':         ['#f7f1ff',   '250'],
-          \ 'red':        ['#fc618d',   '203'],
-          \ 'orange':     ['#fd995d',   '215'],
-          \ 'yellow':     ['#fce566',   '179'],
+          \ 'fg':         ['#f6f8fa',   '250'],
+          \ 'red':        ['#fc5e8b',   '203'],
+          \ 'orange':     ['#fd9f67',   '215'],
+          \ 'yellow':     ['#fce87a',   '179'],
           \ 'green':      ['#7bd88f',   '107'],
           \ 'blue':       ['#5ad4e6',   '110'],
           \ 'purple':     ['#948ae3',   '176'],
           \ 'purple2':    ['#AB9DF2',   '176'],
-          \ 'grey':       ['#737177',   '246'],
+          \ 'grey':       ['#7b7980',   '246'],
           \ 'grey_dim':   ['#525053',   '240'],
           \ 'grey2':      ['#BAB6C0',   '240'],
           \ 'none':       ['NONE',      'NONE']
