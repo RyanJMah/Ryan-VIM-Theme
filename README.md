@@ -1,3 +1,1 @@
 My fork of sonokai for my own personal use.
-
-If you for some reason want to use this, keep in mind I only use the "sushia" theme...
